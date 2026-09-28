@@ -1,0 +1,315 @@
+/* =========================================
+   NEXT ACTION SECTION
+   ========================================= */
+
+.next-action-section {
+  width: 100%;
+  padding: 140px 8% 120px;
+  background: #f5f3eb;
+  box-sizing: border-box;
+}
+
+.next-action-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 70px;
+}
+
+.next-action-eyebrow {
+  margin: 0 0 22px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #77776e;
+  text-transform: uppercase;
+}
+
+.next-action-header h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(64px, 7vw, 110px);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: -5px;
+  color: #1e1e1b;
+}
+
+.next-action-header h2 em {
+  color: #789b35;
+  font-weight: 400;
+}
+
+.next-action-description {
+  margin: 28px 0 0;
+  max-width: 520px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #4e4e47;
+}
+
+.next-action-count {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding-bottom: 8px;
+}
+
+.next-action-count strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 0.8;
+  color: #1e1e1b;
+}
+
+.next-action-count span {
+  padding-bottom: 4px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #77776e;
+}
+
+
+/* =========================================
+   APPLICATION LIST
+   ========================================= */
+
+.next-action-list {
+  width: 100%;
+  border-top: 1px solid rgba(30, 30, 27, 0.18);
+}
+
+.next-action-row {
+  width: 100%;
+  min-height: 138px;
+  display: grid;
+  grid-template-columns: 100px minmax(280px, 1.3fr) minmax(250px, 1fr) 180px 70px;
+  align-items: center;
+  gap: 25px;
+  border-bottom: 1px solid rgba(30, 30, 27, 0.14);
+  transition:
+    background 0.25s ease,
+    padding 0.25s ease;
+  box-sizing: border-box;
+}
+
+.next-action-row:hover {
+  background: rgba(120, 155, 53, 0.055);
+}
+
+.next-action-number {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #77776e;
+}
+
+
+/* =========================================
+   COMPANY
+   ========================================= */
+
+.next-action-company {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.next-action-logo {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #242422;
+  color: #f5f3eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.next-action-company h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #242422;
+}
+
+.next-action-company p {
+  margin: 0;
+  font-size: 14px;
+  color: #55554e;
+}
+
+
+/* =========================================
+   NEXT STEP
+   ========================================= */
+
+.next-action-task {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.next-action-task span {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #77776e;
+  text-transform: uppercase;
+}
+
+.next-action-task strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #292925;
+}
+
+
+/* =========================================
+   DEADLINE
+   ========================================= */
+
+.next-action-deadline {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.next-action-deadline > span {
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #999990;
+}
+
+.next-action-deadline small {
+  font-size: 11px;
+  color: #789b35;
+  font-weight: 600;
+}
+
+.next-action-deadline strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #292925;
+}
+
+
+/* =========================================
+   ARROW BUTTON
+   ========================================= */
+
+.next-action-arrow {
+  width: 54px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(30, 30, 27, 0.35);
+  border-radius: 2px;
+  background: transparent;
+
+  color: #242422;
+  font-size: 19px;
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.next-action-arrow:hover {
+  background: #242422;
+  border-color: #242422;
+  color: #f5f3eb;
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1000px) {
+  .next-action-section {
+    padding: 100px 6% 90px;
+  }
+
+  .next-action-header h2 {
+    font-size: 70px;
+  }
+
+  .next-action-row {
+    grid-template-columns: 60px 1.3fr 1fr 140px 60px;
+    gap: 15px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+  .next-action-section {
+    padding: 80px 22px;
+  }
+
+  .next-action-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 45px;
+  }
+
+  .next-action-header h2 {
+    font-size: 64px;
+    letter-spacing: -3px;
+  }
+
+  .next-action-count {
+    align-self: flex-end;
+  }
+
+  .next-action-count strong {
+    font-size: 52px;
+  }
+
+  .next-action-row {
+    display: grid;
+    grid-template-columns: 35px 1fr 55px;
+    gap: 15px;
+    padding: 25px 0;
+    min-height: auto;
+  }
+
+  .next-action-number {
+    align-self: flex-start;
+    padding-top: 4px;
+  }
+
+  .next-action-company {
+    grid-column: 2;
+  }
+
+  .next-action-task {
+    grid-column: 2;
+    margin-top: 8px;
+  }
+
+  .next-action-deadline {
+    grid-column: 2;
+    margin-top: 8px;
+  }
+
+  .next-action-arrow {
+    grid-column: 3;
+    grid-row: 1 / span 3;
+    justify-self: end;
+  }
+}
